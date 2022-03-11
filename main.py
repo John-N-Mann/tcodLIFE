@@ -37,8 +37,6 @@ def main() -> None:
 
     with tcod.context.new(columns=WIDTH, rows=HEIGHT, tileset=tileset, title='tcodLIFE') as context:
         while True:
-            print(check_neighbors(gameboard,2,2,True))
-            print(check_neighbors(gameboard,4,4,True))
 
             # 1 - Any dead cell with exactly 3 neighbors becomes alive by repopulation
             # 2 - Any alive cell with 2-3 neighbors stays alive
